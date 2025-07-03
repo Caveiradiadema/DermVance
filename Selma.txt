@@ -1,0 +1,93 @@
+🔹 CLIENTE:
+Nome: Selma Reis  
+Profissão: Estomaterapeuta  
+Objetivo: Site institucional + identidade visual + Instagram profissional
+
+🔹 PACOTE CONTRATADO:
+"Identidade Visual + Instagram + Site em HTML/CSS + Manutenção Mensal"
+
+🔸 Preço:
+De: R$ 2.190,00  
+Por: R$ 1.290,00 à vista ou 3x de R$ 450,00
+
+────────────────────────────
+📁 CONTEÚDO ENTREGUE:
+────────────────────────────
+
+1. IDENTIDADE VISUAL:
+- Logo profissional vetorizada (em PNG, SVG e aplicação em mockups).
+- Paleta de cores suave (rosa pastel, branco, cinza claro).
+- Tipografia feminina com autoridade (Exemplo: Playfair Display + Lato).
+- Aplicações da marca em:
+  • Jaleco  
+  • Ficha do paciente  
+  • Posts para Instagram  
+  • Cartão de visita (opcional)
+
+2. INSTAGRAM PROFISSIONAL:
+- 4 posts com foco em autoridade, cuidado e estética.
+- Formatos: 1080x1080 e 1080x1920.
+- Design acolhedor e médico-estético.
+- Textos com CTA e storytelling humanizado.
+- Feed visual padronizado com nome e especialidade.
+
+3. SITE PROFISSIONAL EM HTML/CSS:
+- Estrutura: 1 página institucional (single page)
+- Responsivo (mobile/tablet/desktop)
+- Estilo visual: Limpo, profissional, feminino e confiável.
+- Paleta suave com destaque em rosa, branco e cinza.
+- Fonte leve e elegante.
+- Elementos: animações suaves de scroll (AOS), botão de WhatsApp e marca d'água com a logo.
+- Conteúdo:
+  • Cabeçalho com logo + nome completo + especialidade.
+  • Seção: Sobre a Selma Reis.
+  • Seção: Especialidades (Estomaterapia, Curativos Complexos, Feridas, Estomas, etc.)
+  • Seção: Benefícios do Tratamento
+  • Seção: Agende sua Consulta (Botão direto do WhatsApp)
+  • Rodapé com direitos autorais e redes sociais.
+
+4. LINK DE WHATSAPP:
+- Com texto personalizado de agendamento:
+  https://wa.me/5511993957268?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Selma%20Reis,%20Estomaterapeuta.
+
+5. PUBLICAÇÃO:
+- Upload no GitHub Pages (ou pode migrar futuramente para domínio próprio).
+- Domínio alternativo: selmareis-estomaterapeuta.github.io
+- Indexação: Tags de SEO aplicadas
+- Scripts: compatibilidade com Google Analytics e AdSense futura
+
+6. MANUTENÇÃO MENSAL:
+Inclui:
+- 1 atualização mensal no conteúdo
+- 1 post extra para Instagram
+- Monitoramento básico de funcionamento do site
+
+────────────────────────────
+🔐 CUIDADOS ADICIONAIS:
+────────────────────────────
+
+• Todos os arquivos são organizados por pasta:
+  → assets/img (logo, fotos, ícones)
+  → css/styles.css
+  → index.html
+  → backup_posts_instagram/
+• HTML limpo, sem frameworks pesados (uso apenas AOS + fonts do Google).
+• Próxima etapa (opcional): criação de formulário de agendamento ou integração com agenda digital.
+
+────────────────────────────
+🗃️ BACKUP E REPOSITÓRIO:
+────────────────────────────
+
+• Pasta do projeto salva localmente em:
+  C:\Users\alemo\Documents\selma-site\
+• Último commit no GitHub: “Entrega inicial site Selma Reis”
+• Possibilidade futura de exportar para domínio .com com hospedagem (Hostinger / Google Domains)
+
+────────────────────────────
+✍️ NOTAS FINAIS:
+────────────────────────────
+
+• Todo o material visual foi aprovado pela cliente com base em referências médicas modernas.
+• O site é focado em conversão: linguagem acolhedora, layout limpo e CTA bem visível.
+• A versão mobile foi testada e validada em dispositivos Android e iOS.
+
