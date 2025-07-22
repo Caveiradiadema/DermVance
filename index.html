@@ -1,291 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DermVance | Cuidado e Tecnologia em Cicatrização</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Descrição SEO -->
-    <meta name="description"
-          content="Acelere a cicatrização de feridas, úlceras e pós‑operatórios com a laserterapia da DermVance em SP. Tratamento indolor, seguro e com atendimento domiciliar. Agende sua avaliação." />
+  <title>DermVance | Cuidado e Tecnologia em Cicatrização</title>
+  <link rel="canonical" href="https://dermvance.vercel.app/">
 
-    <!-- Verificação Google Search Console -->
-    <meta name="google-site-verification" content="lyD9zFntJb2AGStj6Ar5L3btYDYwF069Pp68naBRtsw" />
+  <!-- Descrição SEO -->
+  <meta name="description"
+        content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com a laserterapia da DermVance em SP. Tratamento indolor, seguro e com atendimento domiciliar. Agende sua avaliação.">
 
-    <!-- Favicon (está na pasta do repositório) -->
-    <link rel="icon" href="icone.ico" type="image/x-icon">
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://dermvance.vercel.app/">
+  <meta property="og:title"       content="DermVance | Cuidado e Tecnologia em Cicatrização">
+  <meta property="og:description" content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com laserterapia indolor e atendimento domiciliar.">
+  <meta property="og:image"       content="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/og-cover.png">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z8CW61NJZH');
-    </script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="DermVance | Cuidado e Tecnologia em Cicatrização">
+  <meta name="twitter:description" content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com laserterapia indolor e atendimento domiciliar.">
+  <meta name="twitter:image"       content="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/og-cover.png">
 
-    <!-- Schema.org → SEO técnico (marcação Local Business / MedicalClinic) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalClinic",
-      "name": "DermVance – Laserterapia em Feridas",
-      "url": "https://caveiradiadema.github.io/DermVance/",
-      "image": "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fundo-hero.png",
-      "logo": "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png",
-      "telephone": "+55-11-99380-6245",
-      "email": "mailto:selmareis26@hotmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Santo André",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      },
-      "areaServed": "Grande São Paulo",
-      "availableService": [
-        { "@type": "MedicalTherapy", "name": "Laserterapia em feridas" },
-        { "@type": "MedicalTherapy", "name": "Tratamento para pé diabético" },
-        { "@type": "MedicalTherapy", "name": "Cuidados com úlcera de pressão" }
-      ],
-      "founder": [
-        { "@type": "Person", "name": "André",       "identifier": "COREN‑SP 362.356", "jobTitle": "Enfermeiro Estomaterapeuta" },
-        { "@type": "Person", "name": "Selma Reis", "identifier": "COREN‑SP 219.141", "jobTitle": "Enfermeira Estomaterapeuta" }
-      ]
-    }
-    </script>
+  <!-- Verificação Google Search Console -->
+  <meta name="google-site-verification" content="lyD9zFntJb2AGStj6Ar5L3btYDYwF069Pp68naBRtsw">
 
-    <!-- Fonts e libs -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon"
+        href="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/icone.ico"
+        type="image/x-icon">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z8CW61NJZH');
+  </script>
+
+  <!-- Schema – Local Business / MedicalClinic -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "DermVance – Laserterapia em Feridas",
+    "url": "https://dermvance.vercel.app/",
+    "image": "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fundo-hero.png",
+    "logo":  "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png",
+    "telephone": "+55-11-99380-6245",
+    "email": "mailto:selmareis26@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santo André",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Grande São Paulo",
+    "availableService": [
+      {"@type":"MedicalTherapy","name":"Laserterapia em feridas"},
+      {"@type":"MedicalTherapy","name":"Tratamento para pé diabético"},
+      {"@type":"MedicalTherapy","name":"Cuidados com úlcera de pressão"}
+    ],
+    "founder":[
+      {"@type":"Person","name":"André","identifier":"COREN‑SP 362.356","jobTitle":"Enfermeiro Estomaterapeuta"},
+      {"@type":"Person","name":"Selma Reis","identifier":"COREN‑SP 219.141","jobTitle":"Enfermeira Estomaterapeuta"}
+    ]
+  }
+  </script>
+
+  <!-- Fonts & libs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo-area">
-                <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png"
-                     alt="Logo DermVance" class="logo-img">
-                <span class="logo-text">DermVance</span>
-            </div>
-            <a href="#contato" class="btn btn-primary">Agendar Avaliação</a>
+  <!-- ===== HEADER ===== -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png"
+             alt="Logo DermVance" class="logo-img">
+        <span class="logo-text">DermVance</span>
+      </div>
+      <a href="#contato" class="btn btn-primary">Agendar Avaliação</a>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" data-aos="fade-up">
+        <h1 class="hero-title">A tecnologia que reconstrói sua pele e devolve sua vida.</h1>
+        <p class="hero-subtitle">Soluções avançadas em laserterapia para uma cicatrização rápida, eficaz e um cuidado que vai além da ferida.</p>
+        <a href="#contato" class="btn btn-primary btn-large">Quero iniciar minha jornada</a>
+      </div>
+    </section>
+
+    <!-- JORNADA DO PACIENTE -->
+    <section class="journey-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Sua jornada para o bem‑estar começa aqui.</h2>
+
+        <div class="journey-timeline">
+          <div class="journey-step" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3 class="step-title">1. Avaliação Completa</h3>
+            <p class="step-description">Entendemos sua história e analisamos a lesão para criar um plano de tratamento único para você.</p>
+          </div>
+
+          <div class="journey-step" data-aos="fade-right" data-aos-delay="300">
+            <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3 class="step-title">2. Aplicação do Laser</h3>
+            <p class="step-description">Utilizamos a laserterapia para acelerar a regeneração, reduzir a dor e a inflamação de forma indolor.</p>
+          </div>
+
+          <div class="journey-step" data-aos="fade-right" data-aos-delay="500">
+            <div class="step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3 class="step-title">3. Acompanhamento</h3>
+            <p class="step-description">Monitoramos sua evolução a cada sessão, ajustando o tratamento para garantir os melhores resultados.</p>
+          </div>
+
+          <div class="journey-step" data-aos="fade-right" data-aos-delay="700">
+            <div class="step-icon"><i class="fa-solid fa-award"></i></div>
+            <h3 class="step-title">4. Recuperação e Alta</h3>
+            <p class="step-description">Celebramos sua recuperação, devolvendo sua autonomia e qualidade de vida.</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <!-- ===== MAIN ===== -->
-    <main>
+    <!-- TECNOLOGIA LASER -->
+    <section class="laser-tech-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">A Ciência da Luz a Serviço da Sua Pele</h2>
+        <p class="section-subtitle">Utilizamos a fotobioestimulação a laser (LLLT), tecnologia com validação científica mundial para acelerar a cicatrização de feridas, estomias e fístulas.</p>
 
-        <!-- HERO ============================================================= -->
-        <section class="hero">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content" data-aos="fade-up">
-                <h1 class="hero-title">A tecnologia que reconstrói sua pele e devolve sua vida.</h1>
-                <p class="hero-subtitle">Soluções avançadas em laserterapia para uma cicatrização rápida, eficaz e um cuidado que vai além da ferida.</p>
-                <a href="#contato" class="btn btn-primary btn-large">Quero iniciar minha jornada</a>
+        <div class="laser-grid">
+          <!-- Texto -->
+          <div class="laser-text-content" data-aos="fade-right">
+            <h3>Como a Luz Atua na Pele?</h3>
+            <p>O laser de baixa intensidade não queima nem causa dor. Ele é absorvido pelas células danificadas, desencadeando um processo de regeneração natural e acelerado.</p>
+
+            <div class="action-mechanism-grid">
+              <div class="mechanism-item">
+                <i class="fa-solid fa-dna"></i>
+                <h4>Estímulo de Colágeno</h4>
+                <p>Aumenta a produção de colágeno, essencial para uma pele mais forte e organizada.</p>
+              </div>
+
+              <div class="mechanism-item">
+                <i class="fa-solid fa-droplet"></i>
+                <h4>Melhora da Circulação</h4>
+                <p>Promove angiogênese, nutrindo e oxigenando o tecido.</p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- JORNADA DO PACIENTE ============================================= -->
-        <section class="journey-section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Sua jornada para o bem‑estar começa aqui.</h2>
+          <!-- Benefícios -->
+          <div class="laser-benefits-list" data-aos="fade-left" data-aos-delay="200">
+            <h3>Benefícios Clínicos Comprovados</h3>
 
-                <div class="journey-timeline">
-                    <div class="journey-step" data-aos="fade-right" data-aos-delay="100">
-                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <h3 class="step-title">1. Avaliação Completa</h3>
-                        <p class="step-description">Entendemos sua história e analisamos a lesão para criar um plano de tratamento único para você.</p>
-                    </div>
-
-                    <div class="journey-step" data-aos="fade-right" data-aos-delay="300">
-                        <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                        <h3 class="step-title">2. Aplicação do Laser</h3>
-                        <p class="step-description">Utilizamos a laserterapia para acelerar a regeneração, reduzir a dor e a inflamação de forma indolor.</p>
-                    </div>
-
-                    <div class="journey-step" data-aos="fade-right" data-aos-delay="500">
-                        <div class="step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                        <h3 class="step-title">3. Acompanhamento</h3>
-                        <p class="step-description">Monitoramos sua evolução a cada sessão, ajustando o tratamento para garantir os melhores resultados.</p>
-                    </div>
-
-                    <div class="journey-step" data-aos="fade-right" data-aos-delay="700">
-                        <div class="step-icon"><i class="fa-solid fa-award"></i></div>
-                        <h3 class="step-title">4. Recuperação e Alta</h3>
-                        <p class="step-description">Celebramos sua recuperação, devolvendo sua autonomia e qualidade de vida.</p>
-                    </div>
-                </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <h4>Cicatrização Acelerada</h4>
+                <p>Eficaz no tratamento de úlceras crônicas, feridas neuropáticas e pós‑cirúrgicas.</p>
+              </div>
             </div>
-        </section>
 
-        <!-- LASERTECH ======================================================== -->
-        <section class="laser-tech-section">
-            <div class="container" data-aos="fade-up">
-                <h2 class="section-title">A Ciência da Luz a Serviço da Sua Pele</h2>
-                <p class="section-subtitle">Utilizamos a fotobioestimulação a laser (LLLT), tecnologia com validação científica mundial para acelerar a cicatrização de feridas, estomias e fístulas.</p>
-
-                <div class="laser-grid">
-                    <!-- Texto -->
-                    <div class="laser-text-content" data-aos="fade-right">
-                        <h3>Como a Luz Atua na Pele?</h3>
-                        <p>O laser de baixa intensidade não queima nem causa dor. Ele é absorvido pelas células danificadas, desencadeando um processo de regeneração natural e acelerado.</p>
-
-                        <div class="action-mechanism-grid">
-                            <div class="mechanism-item">
-                                <i class="fa-solid fa-dna"></i>
-                                <h4>Estímulo de Colágeno</h4>
-                                <p>Aumenta a produção de colágeno, essencial para uma pele mais forte e organizada.</p>
-                            </div>
-                            <div class="mechanism-item">
-                                <i class="fa-solid fa-droplet"></i>
-                                <h4>Melhora da Circulação</h4>
-                                <p>Promove angiogênese, nutrindo e oxigenando o tecido.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Benefícios -->
-                    <div class="laser-benefits-list" data-aos="fade-left" data-aos-delay="200">
-                        <h3>Benefícios Clínicos Comprovados</h3>
-
-                        <div class="benefit-item">
-                            <i class="fa-solid fa-gauge-high"></i>
-                            <div>
-                                <h4>Cicatrização Acelerada</h4>
-                                <p>Eficaz no tratamento de úlceras crônicas, feridas neuropáticas e pós‑cirúrgicas.</p>
-                            </div>
-                        </div>
-
-                        <div class="benefit-item">
-                            <i class="fa-solid fa-ruler-combined"></i>
-                            <div>
-                                <h4>Redução da Área da Ferida</h4>
-                                <p>Estudos indicam redução de 14 % a 38 % no tamanho da ferida versus curativos convencionais.</p>
-                            </div>
-                        </div>
-
-                        <div class="benefit-item">
-                            <i class="fa-solid fa-face-smile"></i>
-                            <div>
-                                <h4>Alívio da Dor</h4>
-                                <p>A terapia a laser reduz significativamente a dor, tornando o tratamento mais confortável.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-ruler-combined"></i>
+              <div>
+                <h4>Redução da Área da Ferida</h4>
+                <p>Estudos indicam redução de 14 % a 38 % no tamanho da ferida versus curativos convencionais.</p>
+              </div>
             </div>
-        </section>
 
-        <!-- EQUIPE =========================================================== -->
-        <section class="team-section">
-            <div class="container" data-aos="fade-up">
-                <h2 class="section-title">Nossa Equipe</h2>
-                <p class="section-subtitle">Profissionais dedicados à sua recuperação e bem‑estar.</p>
-
-                <div class="team-grid">
-                    <!-- André -->
-                    <div class="team-member-card" data-aos="fade-right" data-aos-delay="100">
-                        <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoandre.jpeg"
-                             alt="Enfermeiro Estomaterapeuta André, especialista em cicatrização a laser"
-                             class="team-member-photo">
-                        <h3 class="team-member-name">André</h3>
-                        <p class="team-member-title">Enfermeiro Estomaterapeuta | COREN‑SP 362.356</p>
-                        <ul class="team-member-qualifications">
-                            <li><i class="fa-solid fa-check"></i> Graduado em Enfermagem pela Faculdade UNIABC</li>
-                            <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite)</li>
-                            <li><i class="fa-solid fa-check"></i> Especialização em Docência em Saúde</li>
-                            <li><i class="fa-solid fa-check"></i> Cuidados Intensivos de Alta Complexidade</li>
-                            <li><i class="fa-solid fa-check"></i> Experiência com curativos complexos e laserterapia</li>
-                        </ul>
-                    </div>
-
-                    <!-- Selma -->
-                    <div class="team-member-card" data-aos="fade-left" data-aos-delay="200">
-                        <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoselma.jpeg"
-                             alt="Enfermeira Estomaterapeuta Selma Reis, especialista em tratamento de feridas"
-                             class="team-member-photo">
-                        <h3 class="team-member-name">Selma Reis</h3>
-                        <p class="team-member-title">Enfermeira Estomaterapeuta | COREN‑SP 219.141</p>
-                        <ul class="team-member-qualifications">
-                            <li><i class="fa-solid fa-check"></i> Graduada em Enfermagem pela Faculdade de São Paulo</li>
-                            <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite)</li>
-                            <li><i class="fa-solid fa-check"></i> Especialização em Saúde Mental</li>
-                            <li><i class="fa-solid fa-check"></i> Docência no Ensino Superior</li>
-                            <li><i class="fa-solid fa-check"></i> Capacitada em PICC, intraóssea, ECG e hipodermóclise</li>
-                            <li><i class="fa-solid fa-check"></i> Participação no Congresso de Estomaterapia</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-face-smile"></i>
+              <div>
+                <h4>Alívio da Dor</h4>
+                <p>A terapia a laser reduz significativamente a dor, tornando o tratamento mais confortável.</p>
+              </div>
             </div>
-        </section>
-
-        <!-- CONTATO ========================================================== -->
-        <section id="contato" class="contact-section">
-            <div class="container" data-aos="fade-up">
-                <h2 class="section-title">Dê o primeiro passo para a sua recuperação.</h2>
-                <p class="section-subtitle">Preencha os campos abaixo. Ao clicar em enviar, uma conversa será aberta no WhatsApp com nossa equipe.</p>
-
-                <div class="contact-content">
-                    <!-- Infos -->
-                    <div class="contact-info">
-                        <h4>Canais de Atendimento</h4>
-                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511993806245" target="_blank" rel="noopener">André: +55 11 99380‑6245</a></p>
-                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511968155609" target="_blank" rel="noopener">Selma: +55 11 96815‑5609</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:selmareis26@hotmail.com">selmareis26@hotmail.com</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Santo André – SP (atendimento domiciliar em toda a Grande SP)</p>
-                    </div>
-
-                    <!-- Form -->
-                    <form class="contact-form" id="whatsapp-form">
-                        <input type="text" id="nome" placeholder="Seu nome completo" required>
-                        <input type="tel" id="whatsapp" placeholder="Seu WhatsApp com DDD (ex: 11912345678)" required>
-                        <textarea id="mensagem" placeholder="Descreva brevemente seu caso" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary btn-full">Enviar mensagem via WhatsApp</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Libs JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
+    <!-- EQUIPE -->
+    <section class="team-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">Nossa Equipe</h2>
+        <p class="section-subtitle">Profissionais dedicados à sua recuperação e bem‑estar.</p>
 
-        // Envio dinâmico para WhatsApp
-        document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
-            event.preventDefault();
+        <div class="team-grid">
+          <!-- André -->
+          <div class="team-member-card" data-aos="fade-right" data-aos-delay="100">
+            <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoandre.jpeg"
+                 alt="Enfermeiro Estomaterapeuta André, especialista em cicatrização a laser"
+                 class="team-member-photo">
+            <h3 class="team-member-name">André</h3>
+            <p class="team-member-title">Enfermeiro Estomaterapeuta | COREN‑SP 362.356</p>
+            <ul class="team-member-qualifications">
+              <li><i class="fa-solid fa-check"></i> Graduado em Enfermagem pela Faculdade UNIABC (2017)</li>
+              <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite, em andamento)</li>
+              <li><i class="fa-solid fa-check"></i> Especialização em Docência em Saúde (2019)</li>
+              <li><i class="fa-solid fa-check"></i> Cuidados Intensivos de Alta Complexidade (em curso)</li>
+              <li><i class="fa-solid fa-check"></i> Experiência com curativos complexos e laserterapia</li>
+            </ul>
+          </div>
 
-            const profissionais = [
-                { nome: 'André', fone: '5511993806245' },
-                { nome: 'Selma', fone: '5511968155609' }
-            ];
+          <!-- Selma -->
+          <div class="team-member-card" data-aos="fade-left" data-aos-delay="200">
+            <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoselma.jpeg"
+                 alt="Enfermeira Estomaterapeuta Selma Reis, especialista em tratamento de feridas"
+                 class="team-member-photo">
+            <h3 class="team-member-name">Selma Reis</h3>
+            <p class="team-member-title">Enfermeira Estomaterapeuta | COREN‑SP 219.141</p>
+            <ul class="team-member-qualifications">
+              <li><i class="fa-solid fa-check"></i> Graduada em Enfermagem pela Faculdade de São Paulo (2019)</li>
+              <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite, 2024)</li>
+              <li><i class="fa-solid fa-check"></i> Especialização em Saúde Mental (2024)</li>
+              <li><i class="fa-solid fa-check"></i> Docência no Ensino Superior (2024)</li>
+              <li><i class="fa-solid fa-check"></i> Capacitada em PICC, intraóssea, ECG e hipodermóclise</li>
+              <li><i class="fa-solid fa-check"></i> Participação no Congresso de Estomaterapia (2022)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
-            const pro = profissionais[idx];
-            localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
+    <!-- CONTATO -->
+    <section id="contato" class="contact-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">Dê o primeiro passo para a sua recuperação.</h2>
+        <p class="section-subtitle">Preencha os campos abaixo. Ao clicar em enviar, uma conversa será aberta no WhatsApp com nossa equipe.</p>
 
-            const nome      = document.getElementById('nome').value.trim();
-            const whatsapp  = document.getElementById('whatsapp').value.trim();
-            const mensagem  = document.getElementById('mensagem').value.trim();
+        <div class="contact-content">
+          <!-- Infos -->
+          <div class="contact-info">
+            <h4>Canais de Atendimento</h4>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511993806245" target="_blank" rel="noopener">André: +55 11 99380‑6245</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511968155609" target="_blank" rel="noopener">Selma: +55 11 96815‑5609</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:selmareis26@hotmail.com">selmareis26@hotmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Santo André – SP (atendimento domiciliar em toda a São Paulo)</p>
+          </div>
 
-            const texto = `Olá, meu nome é ${nome} (WhatsApp: ${whatsapp}).%0A` +
-                          `Falo referente ao site DermVance.%0A%0A${mensagem}`;
+          <!-- Form -->
+          <form class="contact-form" id="whatsapp-form">
+            <input type="text" id="nome" placeholder="Seu nome completo" required>
+            <input type="tel" id="whatsapp" placeholder="Seu WhatsApp com DDD (ex: 11912345678)" required>
+            <textarea id="mensagem" placeholder="Descreva brevemente seu caso" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-            window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
-        });
-    </script>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Libs JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Envio dinâmico para WhatsApp
+    document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const profissionais = [
+        { nome: 'André', fone: '5511993806245' },
+        { nome: 'Selma', fone: '5511968155609' }
+      ];
+
+      let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
+      const pro = profissionais[idx];
+      localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
+
+      const nome     = document.getElementById('nome').value.trim();
+      const whatsapp = document.getElementById('whatsapp').value.trim();
+      const msg      = document.getElementById('mensagem').value.trim();
+
+      const texto = `Olá, meu nome é ${nome} (WhatsApp: ${whatsapp}).%0A` +
+                    `Falo referente ao site DermVance.%0A%0A${msg}`;
+
+      window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
+    });
+  </script>
 </body>
 </html>
