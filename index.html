@@ -2,82 +2,50 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>DermVance | Cuidado e Tecnologia em Cicatrização</title>
   <link rel="canonical" href="https://dermvance.vercel.app/">
 
   <!-- Descrição SEO -->
-  <meta name="description"
-        content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com a laserterapia da DermVance em SP. Tratamento indolor, seguro e com atendimento domiciliar. Agende sua avaliação.">
+  <meta name="description" content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com a laserterapia da DermVance em SP. Tratamento indolor, seguro e com atendimento domiciliar. Agende sua avaliação.">
 
-  <!-- Open Graph / WhatsApp / Facebook -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://dermvance.vercel.app/">
-  <meta property="og:title"       content="DermVance | Cuidado e Tecnologia em Cicatrização">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url"  content="https://dermvance.vercel.app/">
+  <meta property="og:title" content="DermVance | Cuidado e Tecnologia em Cicatrização">
   <meta property="og:description" content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com laserterapia indolor e atendimento domiciliar.">
-  <meta property="og:image"       content="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/og-cover.png">
+  <!-- Use WebP + PNG fallback for best compatibility -->
+  <meta property="og:image" content="https://dermvance.vercel.app/img/og-cover.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="DermVance atendimento em cicatrização de feridas">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="DermVance | Cuidado e Tecnologia em Cicatrização">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DermVance | Cuidado e Tecnologia em Cicatrização">
   <meta name="twitter:description" content="Acelere a cicatrização de feridas, úlceras e pós-operatórios com laserterapia indolor e atendimento domiciliar.">
-  <meta name="twitter:image"       content="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/og-cover.png">
+  <meta name="twitter:image" content="https://dermvance.vercel.app/img/og-cover.webp">
 
-  <!-- Verificação Google Search Console -->
+  <!-- Google Search Console -->
   <meta name="google-site-verification" content="lyD9zFntJb2AGStj6Ar5L3btYDYwF069Pp68naBRtsw">
 
-  <!-- Favicon -->
-  <link rel="icon"
-        href="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/icone.ico"
-        type="image/x-icon">
+  <!-- Favicons -->
+  <link rel="icon"       href="/favicon/favicon.ico" type="image/x-icon">
+  <link rel="alternate icon" href="/favicon/icone.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon.ico">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Z8CW61NJZH');
-  </script>
+  <!-- Preloads (perf) -->
+  <link rel="preload" as="image" href="/img/hero-960.webp" imagesrcset="/img/hero-960.webp 960w, /img/hero-1440.webp 1440w" imagesizes="100vw">
+  <link rel="preload" as="image" href="/img/logo-45.webp">
+  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v12/....woff2" type="font/woff2" crossorigin> <!-- (optional exact URL once known) -->
 
-  <!-- Schema – Local Business / MedicalClinic -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "DermVance – Laserterapia em Feridas",
-    "url": "https://dermvance.vercel.app/",
-    "image": "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fundo-hero.png",
-    "logo":  "https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png",
-    "telephone": "+55-11-99380-6245",
-    "email": "mailto:selmareis26@hotmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Santo André",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "areaServed": "Grande São Paulo",
-    "availableService": [
-      {"@type":"MedicalTherapy","name":"Laserterapia em feridas"},
-      {"@type":"MedicalTherapy","name":"Tratamento para pé diabético"},
-      {"@type":"MedicalTherapy","name":"Cuidados com úlcera de pressão"}
-    ],
-    "founder":[
-      {"@type":"Person","name":"André","identifier":"COREN‑SP 362.356","jobTitle":"Enfermeiro Estomaterapeuta"},
-      {"@type":"Person","name":"Selma Reis","identifier":"COREN‑SP 219.141","jobTitle":"Enfermeira Estomaterapeuta"}
-    ]
-  }
-  </script>
-
-  <!-- Fonts & libs -->
+  <!-- Fonts & libs -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
 
@@ -85,8 +53,7 @@
   <header class="main-header">
     <div class="container header-container">
       <div class="logo-area">
-        <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/logo_simbolo_selma.png"
-             alt="Logo DermVance" class="logo-img">
+        <img src="/img/logo-45.webp" width="45" height="45" alt="Logo DermVance" class="logo-img" decoding="async">
         <span class="logo-text">DermVance</span>
       </div>
       <a href="#contato" class="btn btn-primary">Agendar Avaliação</a>
@@ -109,7 +76,7 @@
     <!-- JORNADA DO PACIENTE -->
     <section class="journey-section">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Sua jornada para o bem‑estar começa aqui.</h2>
+        <h2 class="section-title" data-aos="fade-up">Sua jornada para o bem-estar começa aqui.</h2>
 
         <div class="journey-timeline">
           <div class="journey-step" data-aos="fade-right" data-aos-delay="100">
@@ -174,7 +141,7 @@
               <i class="fa-solid fa-gauge-high"></i>
               <div>
                 <h4>Cicatrização Acelerada</h4>
-                <p>Eficaz no tratamento de úlceras crônicas, feridas neuropáticas e pós‑cirúrgicas.</p>
+                <p>Eficaz no tratamento de úlceras crônicas, feridas neuropáticas e pós-cirúrgicas.</p>
               </div>
             </div>
 
@@ -182,7 +149,7 @@
               <i class="fa-solid fa-ruler-combined"></i>
               <div>
                 <h4>Redução da Área da Ferida</h4>
-                <p>Estudos indicam redução de 14 % a 38 % no tamanho da ferida versus curativos convencionais.</p>
+                <p>Estudos indicam redução de 14 % a 38 % no tamanho da ferida versus curativos convencionais.</p>
               </div>
             </div>
 
@@ -202,20 +169,20 @@
     <section class="team-section">
       <div class="container" data-aos="fade-up">
         <h2 class="section-title">Nossa Equipe</h2>
-        <p class="section-subtitle">Profissionais dedicados à sua recuperação e bem‑estar.</p>
+        <p class="section-subtitle">Profissionais dedicados à sua recuperação e bem-estar.</p>
 
         <div class="team-grid">
           <!-- André -->
           <div class="team-member-card" data-aos="fade-right" data-aos-delay="100">
-            <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoandre.jpeg"
+            <img src="/img/fotoandre-142.webp"
                  alt="Enfermeiro Estomaterapeuta André, especialista em cicatrização a laser"
-                 class="team-member-photo">
+                 class="team-member-photo" width="150" height="150" loading="lazy" decoding="async">
             <h3 class="team-member-name">André</h3>
-            <p class="team-member-title">Enfermeiro Estomaterapeuta | COREN‑SP 362.356</p>
+            <p class="team-member-title">Enfermeiro Estomaterapeuta | COREN-SP 362.356</p>
             <ul class="team-member-qualifications">
-              <li><i class="fa-solid fa-check"></i> Graduado em Enfermagem pela Faculdade UNIABC (2017)</li>
-              <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite, em andamento)</li>
-              <li><i class="fa-solid fa-check"></i> Especialização em Docência em Saúde (2019)</li>
+              <li><i class="fa-solid fa-check"></i> Graduado em Enfermagem pela Faculdade UNIABC (2017)</li>
+              <li><i class="fa-solid fa-check"></i> Pós-graduação em Estomaterapia (Faculdade Cleber Leite, em andamento)</li>
+              <li><i class="fa-solid fa-check"></i> Especialização em Docência em Saúde (2019)</li>
               <li><i class="fa-solid fa-check"></i> Cuidados Intensivos de Alta Complexidade (em curso)</li>
               <li><i class="fa-solid fa-check"></i> Experiência com curativos complexos e laserterapia</li>
             </ul>
@@ -223,15 +190,15 @@
 
           <!-- Selma -->
           <div class="team-member-card" data-aos="fade-left" data-aos-delay="200">
-            <img src="https://raw.githubusercontent.com/Caveiradiadema/DermVance/master/fotoselma.jpeg"
-                 alt="Enfermeira Estomaterapeuta Selma Reis, especialista em tratamento de feridas"
-                 class="team-member-photo">
-            <h3 class="team-member-name">Selma Reis</h3>
-            <p class="team-member-title">Enfermeira Estomaterapeuta | COREN‑SP 219.141</p>
+            <img src="/img/fotoselma-142.webp"
+                 alt="Enfermeira Estomaterapeuta Selma Reis, especialista em tratamento de feridas"
+                 class="team-member-photo" width="150" height="150" loading="lazy" decoding="async">
+            <h3 class="team-member-name">Selma Reis</h3>
+            <p class="team-member-title">Enfermeira Estomaterapeuta | COREN-SP 219.141</p>
             <ul class="team-member-qualifications">
-              <li><i class="fa-solid fa-check"></i> Graduada em Enfermagem pela Faculdade de São Paulo (2019)</li>
-              <li><i class="fa-solid fa-check"></i> Pós‑graduação em Estomaterapia (Faculdade Cleber Leite, 2024)</li>
-              <li><i class="fa-solid fa-check"></i> Especialização em Saúde Mental (2024)</li>
+              <li><i class="fa-solid fa-check"></i> Graduada em Enfermagem pela Faculdade de São Paulo (2019)</li>
+              <li><i class="fa-solid fa-check"></i> Pós-graduação em Estomaterapia (Faculdade Cleber Leite, 2024)</li>
+              <li><i class="fa-solid fa-check"></i> Especialização em Saúde Mental (2024)</li>
               <li><i class="fa-solid fa-check"></i> Docência no Ensino Superior (2024)</li>
               <li><i class="fa-solid fa-check"></i> Capacitada em PICC, intraóssea, ECG e hipodermóclise</li>
               <li><i class="fa-solid fa-check"></i> Participação no Congresso de Estomaterapia (2022)</li>
@@ -251,10 +218,10 @@
           <!-- Infos -->
           <div class="contact-info">
             <h4>Canais de Atendimento</h4>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511993806245" target="_blank" rel="noopener">André: +55 11 99380‑6245</a></p>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511968155609" target="_blank" rel="noopener">Selma: +55 11 96815‑5609</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511993806245" target="_blank" rel="noopener">André: +55 11 99380-6245</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511968155609" target="_blank" rel="noopener">Selma: +55 11 96815-5609</a></p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:selmareis26@hotmail.com">selmareis26@hotmail.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> Santo André – SP (atendimento domiciliar em toda a São Paulo)</p>
+            <p><i class="fas fa-map-marker-alt"></i> Santo André – SP (atendimento domiciliar em toda a São Paulo)</p>
           </div>
 
           <!-- Form -->
@@ -262,7 +229,7 @@
             <input type="text" id="nome" placeholder="Seu nome completo" required>
             <input type="tel" id="whatsapp" placeholder="Seu WhatsApp com DDD (ex: 11912345678)" required>
             <textarea id="mensagem" placeholder="Descreva brevemente seu caso" rows="5" required></textarea>
-            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem via WhatsApp</button>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem via WhatsApp</button>
           </form>
         </div>
       </div>
@@ -273,16 +240,16 @@
   <!-- ===== FOOTER ===== -->
   <footer class="main-footer">
     <div class="container">
-      <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
+      <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Libs JS -->
+  <!-- Libs JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
 
-    // Envio dinâmico para WhatsApp
+    // Envio dinâmico para WhatsApp (round-robin entre André e Selma)
     document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -304,6 +271,45 @@
 
       window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
     });
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z8CW61NJZH');
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "DermVance – Laserterapia em Feridas",
+    "url": "https://dermvance.vercel.app/",
+    "image": "https://dermvance.vercel.app/img/hero-1440.webp",
+    "logo":  "https://dermvance.vercel.app/img/logo.webp",
+    "telephone": "+55-11-99380-6245",
+    "email": "mailto:selmareis26@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santo André",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Grande São Paulo",
+    "availableService": [
+      {"@type":"MedicalTherapy","name":"Laserterapia em feridas"},
+      {"@type":"MedicalTherapy","name":"Tratamento para pé diabético"},
+      {"@type":"MedicalTherapy","name":"Cuidados com úlcera de pressão"}
+    ],
+    "founder":[
+      {"@type":"Person","name":"André","identifier":"COREN-SP 362.356","jobTitle":"Enfermeiro Estomaterapeuta"},
+      {"@type":"Person","name":"Selma Reis","identifier":"COREN-SP 219.141","jobTitle":"Enfermeira Estomaterapeuta"}
+    ]
+  }
   </script>
 </body>
 </html>
