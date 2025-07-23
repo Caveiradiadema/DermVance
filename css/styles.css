@@ -12,6 +12,24 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--fonte-corpo);line-height:1.7;color:var(--cor-texto);background-color:var(--cor-branco);overflow-x:hidden}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Melhoria de acessibilidade para foco */
+.btn:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 section{padding:100px 0}
 .section-title{font-family:var(--fonte-titulo);font-size:2.8rem;color:var(--cor-secundaria);margin-bottom:20px;line-height:1.2;text-align:center}
@@ -68,7 +86,13 @@ section{padding:100px 0}
 .team-member-card:hover{transform:translateY(-5px)}
 .team-member-photo{width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:4px solid var(--cor-primaria)}
 .team-member-name{font-family:var(--fonte-titulo);font-size:1.8rem;color:var(--cor-secundaria);margin-bottom:5px}
-.team-member-title{font-weight:700;color:var(--cor-primaria);margin-bottom:20px;font-size:1rem}
+.team-member-title{
+    font-weight:700;
+-   color:var(--cor-primaria);   /* cor clara → contraste baixo */
++   color:#D97706;              /* laranja mais escuro → contraste ok */
+    margin-bottom:20px;
+    font-size:1rem;
+}
 .team-member-qualifications{list-style:none;text-align:left;font-size:.95rem}
 .team-member-qualifications li{display:flex;align-items:flex-start;margin-bottom:10px}
 .team-member-qualifications i{color:var(--cor-secundaria);margin-right:10px;margin-top:4px}
@@ -101,17 +125,16 @@ section{padding:100px 0}
   .contact-content{grid-template-columns:1fr;padding:30px}
   .hero-title{font-size:2.5rem}
 }
-/* === Ajuste da cor dos links no bloco de contato === */
+/* Links de Contato */
 .contact-info a{
-  color: var(--cor-primaria);        /* laranja da marca */
-  text-decoration: none;             /* remove sublinhado */
+  color: var(--cor-primaria);
+  text-decoration: none;
   transition: color .2s;
 }
 .contact-info a:hover,
 .contact-info a:focus{
-  color: #ffd08a;                    /* tom mais claro no hover (opcional) */
+  color: #ffd08a;
 }
 .contact-info a:visited{
-  color: var(--cor-primaria);        /* evita roxo de link visitado */
+  color: var(--cor-primaria);
 }
-
