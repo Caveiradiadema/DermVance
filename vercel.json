@@ -1,0 +1,5 @@
+// vercel.json (mínimo p/ site estático)
+{
+  "framework": null,        // diz ao Vercel: “não use Next, React, etc.”
+  "outputDirectory": "."    // publique tudo que está na raiz
+}
