@@ -88,8 +88,7 @@ section{padding:100px 0}
 .team-member-name{font-family:var(--fonte-titulo);font-size:1.8rem;color:var(--cor-secundaria);margin-bottom:5px}
 .team-member-title{
     font-weight:700;
--   color:var(--cor-primaria);   /* cor clara → contraste baixo */
-+   color:#D97706;              /* laranja mais escuro → contraste ok */
+    color:#D97706;              /* laranja acessível */
     margin-bottom:20px;
     font-size:1rem;
 }
