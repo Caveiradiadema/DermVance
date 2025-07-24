@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/diadema",                 "destination": "/diadema.html" },
+    { "source": "/santo-andre",             "destination": "/santo-andre.html" },
+    { "source": "/sao-bernardo-do-campo",   "destination": "/sao-bernardo-do-campo.html" },
+    { "source": "/sao-caetano-do-sul",      "destination": "/sao-caetano-do-sul.html" }
+  ]
+}
