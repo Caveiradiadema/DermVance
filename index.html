@@ -73,6 +73,27 @@
     .hero-subtitle { font-size:1.2rem; margin-bottom:40px; font-weight:400; opacity:.9 }
     .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 }
   </style>
+<style>
+  /* Botão flutuante */
+  .floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(242,141,31,0.3);
+    z-index: 1000;
+    transition: background .3s;
+  }
+  .floating-btn:hover {
+    background: #d9760b;
+  }
+</style>
+
 
   <!-- External CSS -->
   <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -372,5 +393,10 @@
     ]
   }
   </script>
+<a href="/terapia-cicatrizacao.html" class="floating-btn">
+  Terapia de Cicatrização
+</a>
+
+
 </body>
 </html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terapia Avançada de Cicatrização de Feridas | DermVance</title>
+  <meta name="description" content="Explore nossas terapias avançadas para cicatrização de feridas de difícil tratamento, incluindo úlceras, queimaduras e pé diabético. Utilizamos tecnologias como Laser de Baixa Intensidade, Terapia Fotodinâmica e ILIB para acelerar sua recuperação." />
+  <meta name="keywords" content="terapia de cicatrização, tratamento de feridas, feridas difíceis, úlceras, queimaduras, pé diabético, laser de baixa intensidade, terapia fotodinâmica, ILIB, LLLT, cicatrização a laser, estomaterapia, DermVance" />
+  <link rel="canonical" href="https://dermvance.vercel.app/terapia-cicatrizacao.html" />
+
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="https://dermvance.vercel.app/terapia-cicatrizacao.html">
+  <meta property="og:title"       content="Terapia Avançada de Cicatrização de Feridas | DermVance">
+  <meta property="og:description" content="Descubra como nossa terapia de ponta acelera a cura de feridas complexas, restaurando sua pele e qualidade de vida.">
+  <meta property="og:image"       content="https://dermvance.vercel.app/img/og-cover.webp">
+  <meta property="og:image:type"  content="image/webp">
+  <meta property="og:image:alt"   content="Tecnologia de laser sendo aplicada na cicatrização de uma ferida.">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Terapia Avançada de Cicatrização de Feridas | DermVance">
+  <meta name="twitter:description" content="Descubra como nossa terapia de ponta acelera a cura de feridas complexas, restaurando sua pele e qualidade de vida.">
+  <meta name="twitter:image"       content="https://dermvance.vercel.app/img/og-cover.webp">
+
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="any">
+  <link rel="preload" as="image" href="/img/logo-45.webp">
+  <link rel="preload" as="image" href="/img/hero-960.webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="/img/hero-1440.webp" media="(min-width: 769px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cor-primaria:#F28D1F;
+      --cor-secundaria:#2A3F6D;
+      --cor-branco:#FFFFFF;
+      --cor-sombra:rgba(42,63,109,1);
+      --fonte-titulo:'Playfair Display', serif;
+      --fonte-corpo:'Inter', sans-serif;
+    }
+    * { margin:0; padding:0; box-sizing:border-box }
+    body { font-family:var(--fonte-corpo); color:#333; background-color:var(--cor-branco); overflow-x:hidden }
+    .container { max-width:1100px; margin:0 auto; padding:0 20px }
+    .btn { display:inline-block; padding:14px 32px; border-radius:50px; text-decoration:none; font-weight:700; font-size:1rem; transition:transform .3s, box-shadow .3s; border:none; cursor:pointer }
+    .btn-primary { background:linear-gradient(45deg, var(--cor-primaria), #ffae5a); color:var(--cor-branco); box-shadow:0 4px 15px rgba(242,141,31,0.3) }
+    .btn-primary:hover { transform:translateY(-3px); box-shadow:0 6px 20px rgba(242,141,31,0.5) }
+    .btn-large { padding:18px 40px; font-size:1.1rem }
+    .main-header { background-color:rgba(255,255,255,0.9); backdrop-filter:blur(10px); padding:15px 0; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px var(--cor-sombra) }
+    .header-container { display:flex; justify-content:space-between; align-items:center }
+    .logo-area { display:flex; align-items:center; gap:12px; text-decoration: none; }
+    .logo-img { height:45px; width:auto }
+    .logo-text { font-family:var(--fonte-titulo); font-size:1.8rem; font-weight:700; color:var(--cor-secundaria) }
+    .hero { position:relative; min-height:60vh; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--cor-branco); background-color:var(--cor-secundaria); background-repeat:no-repeat; background-position:center; background-size:cover; padding:40px 0; }
+    .hero { background-image:url('/img/hero-960.webp'); }
+    @media (min-width:769px) { .hero { background-image:url('/img/hero-1440.webp'); } }
+    .hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(42,63,109,0.75) }
+    .hero-content { position:relative; z-index:2; max-width:800px; }
+    .hero-title { font-family:var(--fonte-titulo); font-size:2.5rem; line-height:1.1; margin-bottom:20px; color:var(--cor-branco) }
+    @media (min-width:768px) { .hero-title { font-size:3.5rem } }
+    .hero-subtitle { font-size:1.2rem; margin-bottom:40px; font-weight:400; opacity:.9 }
+    .section-title { font-family: var(--fonte-titulo); font-size: 2.8rem; color: var(--cor-secundaria); text-align: center; margin-bottom: 20px; }
+    .section-subtitle { font-size: 1.1rem; text-align: center; max-width: 700px; margin: 0 auto 60px; color: #555; }
+    .content-section { padding: 80px 0; }
+    .content-section h3 { font-family: var(--fonte-titulo); font-size: 1.8rem; color: var(--cor-secundaria); margin-top: 40px; margin-bottom: 15px; }
+    .content-section p, .content-section li { line-height: 1.7; margin-bottom: 15px; color: #444; }
+    .content-section ul { list-style: none; padding-left: 0; }
+    .content-section ul li { padding-left: 25px; position: relative; }
+    .content-section ul li::before { content: '✓'; color: var(--cor-primaria); position: absolute; left: 0; font-weight: bold; }
+    .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 }
+  </style>
+<style>
+  /* Botão flutuante */
+  .floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(242,141,31,0.3);
+    z-index: 1000;
+    transition: background .3s;
+  }
+  .floating-btn:hover {
+    background: #d9760b;
+  }
+</style>
+
+
+  <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/styles.min.css"></noscript>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Z8CW61NJZH');
+  </script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="/" class="logo-area">
+        <img src="/img/logo-45.webp" alt="Logo DermVance" class="logo-img">
+        <span class="logo-text">DermVance</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">Terapia Avançada de Cicatrização</h1>
+      <h2 class="hero-subtitle">Utilizamos a ciência e a tecnologia para restaurar sua pele, acelerar a recuperação e devolver sua qualidade de vida.</h2>
+      <a href="#contato" class="btn btn-primary btn-large">Agende sua Avaliação</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <div class="container">
+        
+        <h2 class="section-title" data-aos="fade-up">A Ciência por Trás da Recuperação da Pele</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          A Terapia de Cicatrização combina conhecimento especializado em estomaterapia com tecnologias de ponta para tratar lesões que não respondem aos métodos convencionais. Nosso foco é criar um plano de tratamento personalizado que não apenas cure a ferida, mas também alivie a dor e previna futuras complicações.
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3>Tratamos uma Ampla Gama de Lesões</h3>
+          <p>Nossa expertise abrange desde feridas agudas até as mais complexas e crônicas. Se você sofre com alguma destas condições, nós podemos ajudar:</p>
+          <ul>
+            <li><strong>Feridas de Difícil Cicatrização:</strong> Lesões que persistem por mais de 6 a 12 semanas, como úlceras de perna (venosas ou arteriais) e feridas neuropáticas.</li>
+            <li><strong>Lesões por Pressão (Escaras):</strong> Comuns em pacientes acamados, exigem um cuidado especializado para evitar a progressão e infecção do tecido.</li>
+            <li><strong>Pé Diabético:</strong> Realizamos uma avaliação completa das neuropatias e aplicamos tratamentos que previnem infecções e o risco de amputação, promovendo a cicatrização de úlceras plantares.</li>
+            <li><strong>Queimaduras:</strong> Atuamos no tratamento de queimaduras de 1º, 2º e 3º grau, utilizando terapias que minimizam a dor e reduzem a formação de cicatrizes hipertróficas.</li>
+            <li><strong>Feridas Pós-Operatórias:</strong> Cuidamos de deiscências (abertura de pontos) e outras complicações cirúrgicas, garantindo uma cicatrização segura e eficiente.</li>
+          </ul>
+        </div>
+        
+        <h2 class="section-title" style="margin-top: 80px;" data-aos="fade-up">Nossas Tecnologias Avançadas</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Combinamos curativos especiais com o que há de mais moderno em terapias regenerativas.
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3>Laser de Baixa Intensidade (LLLT - Low-Level Laser Therapy)</h3>
+          <p>
+            Esta é a base de muitos de nossos tratamentos. O <strong>laser de baixa intensidade</strong>, através da fotobiomodulação, atua diretamente no nível celular. Ele não gera calor nem causa dor. Sua luz penetra no tecido e estimula as mitocôndrias a produzirem mais ATP (energia celular), acelerando a proliferação de células saudáveis e a síntese de colágeno. O resultado é uma cicatrização mais rápida, organizada e com menos dor.
+          </p>
+
+          <h3>Terapia Fotodinâmica (PDT - Photodynamic Therapy)</h3>
+          <p>
+            Quando uma ferida está infectada por bactérias, fungos ou biofilmes resistentes a antibióticos, a <strong>terapia fotodinâmica</strong> é uma solução poderosa. Aplicamos um agente fotossensibilizador sobre a lesão e, em seguida, ativamos-o com uma luz de comprimento de onda específico. Essa reação química libera espécies reativas de oxigênio que eliminam os microrganismos de forma seletiva, limpando a ferida e permitindo que o processo de cicatrização recomece.
+          </p>
+
+          <h3>ILIB – Irradiação Intravascular do Sangue com Laser</h3>
+          <p>
+            A técnica <strong>ILIB</strong> (conhecida como laserterapia sistêmica) eleva o tratamento a outro nível. Um laser de baixa intensidade é aplicado de forma transcutânea sobre a artéria radial (no pulso), atuando diretamente na corrente sanguínea. Isso promove um efeito anti-inflamatório sistêmico, melhora a oxigenação dos tecidos, combate os radicais livres e otimiza a microcirculação em todo o corpo. O ILIB não trata apenas a ferida local, mas melhora a saúde geral do paciente, potencializando a cicatrização de dentro para fora.
+          </p>
+          
+          <h3>Prescrição de Manipulados para Cicatrização</h3>
+          <p>
+            Cada ferida é única. Por isso, além das tecnologias, prescrevemos <strong>manipulados para cicatrização</strong>. São formulações tópicas personalizadas, criadas especificamente para as necessidades do seu tecido. Elas podem conter ativos anti-inflamatórios, antimicrobianos, estimuladores de colágeno ou barreiras protetoras, complementando a ação das terapias e garantindo o ambiente ideal para a cura.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">Dê o primeiro passo para a sua recuperação.</h2>
+        <p class="section-subtitle">Preencha os campos abaixo. Ao enviar, uma conversa será aberta no WhatsApp com nossa equipe para agendar sua avaliação.</p>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Canais de Atendimento</h3>
+            <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/5511993806245?text=Ol%C3%A1" target="_blank" rel="noopener">Fagner: +55 11 99380-6245</a></p>
+            <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/5511968155609?text=Ol%C3%A1" target="_blank" rel="noopener">Selma: +55 11 96815-5609</a></p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:selmareis26@hotmail.com">selmareis26@hotmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Diadema – SP (atendimento domiciliar na Grande ABC)</p>
+          </div>
+          <form class="contact-form" id="whatsapp-form">
+            <div>
+              <label for="nome" class="visually-hidden">Seu nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="whatsapp" class="visually-hidden">Seu WhatsApp com DDD</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp com DDD (ex: 11912345678)" autocomplete="tel" required>
+            </div>
+            <div>
+              <label for="mensagem" class="visually-hidden">Descrição do seu caso</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente sua necessidade ou tipo de ferida" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Agendar Avaliação via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Inicia a biblioteca de animações
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, once: true, disable: 'mobile' });
+      }
+
+      // Lógica do formulário de contato com rodízio de profissionais
+      const form = document.getElementById('whatsapp-form');
+      if (form) {
+        const profissionais = [
+          { nome: 'Fagner', fone: '5511993806245' },
+          { nome: 'Selma', fone: '5511968155609' }
+        ];
+        let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
+        const pro = profissionais[idx];
+        localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
+
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          const nome     = document.getElementById('nome').value.trim();
+          const whatsapp = document.getElementById('whatsapp').value.trim();
+          const msg      = document.getElementById('mensagem').value.trim();
+          const texto = `Olá, meu nome é ${nome} (WhatsApp: ${whatsapp}). Vi a página sobre Terapia de Cicatrização e gostaria de agendar uma avaliação.%0A%0A${msg}`;
+          window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
+        });
+      }
+    });
+  </script>
+<a href="/index.html" class="floating-btn">Home</a>
+
+</body>
+</html>
