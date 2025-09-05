@@ -331,17 +331,20 @@
           { nome: 'Fagner', fone: '5511993806245' },
           { nome: 'Selma', fone: '5511968155609' }
         ];
-        let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
-        const pro = profissionais[idx];
-        localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
 
         form.addEventListener('submit', e => {
           e.preventDefault();
+          
+          // LÓGICA NO LUGAR CERTO (EXECUTADA A CADA CLIQUE)
+          let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
+          const pro = profissionais[idx];
+          localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
+
           const nome     = document.getElementById('nome').value.trim();
           const whatsapp = document.getElementById('whatsapp').value.trim();
           const msg      = document.getElementById('mensagem').value.trim();
           const texto = `Olá, meu nome é ${nome} (WhatsApp: ${whatsapp}).%0AFalo sobre DermVance.%0A%0A${msg}`;
-          window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
+          window.open(`httpshttps://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
         });
       }
     });
