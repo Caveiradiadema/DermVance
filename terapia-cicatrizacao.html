@@ -28,6 +28,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'">
+
+  <noscript><link rel="stylesheet" href="/css/styles.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
 
   <style>
     :root {
@@ -58,40 +63,32 @@
     .hero-title { font-family:var(--fonte-titulo); font-size:2.5rem; line-height:1.1; margin-bottom:20px; color:var(--cor-branco) }
     @media (min-width:768px) { .hero-title { font-size:3.5rem } }
     .hero-subtitle { font-size:1.2rem; margin-bottom:40px; font-weight:400; opacity:.9 }
-    .section-title { font-family: var(--fonte-titulo); font-size: 2.8rem; color: var(--cor-secundaria); text-align: center; margin-bottom: 20px; }
-    .section-subtitle { font-size: 1.1rem; text-align: center; max-width: 700px; margin: 0 auto 60px; color: #555; }
-    .content-section { padding: 80px 0; }
-    .content-section h3 { font-family: var(--fonte-titulo); font-size: 1.8rem; color: var(--cor-secundaria); margin-top: 40px; margin-bottom: 15px; }
-    .content-section p, .content-section li { line-height: 1.7; margin-bottom: 15px; color: #444; }
-    .content-section ul { list-style: none; padding-left: 0; }
-    .content-section ul li { padding-left: 25px; position: relative; }
-    .content-section ul li::before { content: '✓'; color: var(--cor-primaria); position: absolute; left: 0; font-weight: bold; }
     .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 }
+     /* Botão flutuante WhatsApp */
+    .floating-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      transition: transform .3s, box-shadow .3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .floating-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    }
+    .floating-btn i { font-size: 1.4rem; }
   </style>
-<style>
-  /* Botão flutuante */
-  .floating-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--cor-primaria);
-    color: #fff;
-    padding: 14px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    box-shadow: 0 4px 15px rgba(242,141,31,0.3);
-    z-index: 1000;
-    transition: background .3s;
-  }
-  .floating-btn:hover {
-    background: #d9760b;
-  }
-</style>
 
-
-  <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/styles.min.css"></noscript>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -214,9 +211,6 @@
   <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></noscript>
-
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Inicia a biblioteca de animações
@@ -247,7 +241,6 @@
     });
   </script>
 
-  <!-- JSON-LD: Breadcrumbs -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -259,7 +252,6 @@
   }
   </script>
 
-  <!-- JSON-LD: Article (página informativa) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -279,7 +271,6 @@
   }
   </script>
 
-  <!-- JSON-LD: FAQ sobre as terapias -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -308,8 +299,27 @@
     ]
   }
   </script>
+  
+  <a href="https://wa.me/5511993806245?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" class="floating-btn">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale no WhatsApp
+  </a>
 
-  <a href="/index.html" class="floating-btn">Home</a>
+  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; width:100%; background:rgba(29, 43, 74, 0.95); color:white; padding:15px 20px; text-align:center; z-index:1001; font-size: 14px;">
+    <p style="margin:0; display:inline;">Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa
+    <a href="/politica-privacidade.html" style="color:#F28D1F; text-decoration:underline;">Política de Privacidade</a>.</p>
+    <button onclick="acceptCookies()" style="background:#F28D1F; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer; margin-left:15px; font-weight: bold;">Aceitar</button>
+  </div>
+
+  <script>
+    // Script do Banner de Cookies
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
