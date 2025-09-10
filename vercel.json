@@ -1,16 +1,7 @@
 {
   "version": 2,
-  "trailingSlash": false,
-  "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/:path(.+).html", "destination": "/:path/", "permanent": true },
+  "trailingSlash": true,
 
-    { "source": "/diadema",               "destination": "/diadema/",               "permanent": true },
-    { "source": "/santo-andre",           "destination": "/santo-andre/",           "permanent": true },
-    { "source": "/sao-bernardo-do-campo", "destination": "/sao-bernardo-do-campo/", "permanent": true },
-    { "source": "/sao-caetano-do-sul",    "destination": "/sao-caetano-do-sul/",    "permanent": true },
-    { "source": "/terapia-cicatrizacao",  "destination": "/terapia-cicatrizacao/",  "permanent": true }
-  ],
   "rewrites": [
     { "source": "/diadema/",               "destination": "/diadema.html" },
     { "source": "/santo-andre/",           "destination": "/santo-andre.html" },
@@ -18,15 +9,8 @@
     { "source": "/sao-caetano-do-sul/",    "destination": "/sao-caetano-do-sul.html" },
     { "source": "/terapia-cicatrizacao/",  "destination": "/terapia-cicatrizacao.html" }
   ],
+
   "headers": [
-    {
-      "source": "/sitemap-pages.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" },
-        { "key": "X-Robots-Tag", "value": "all" }
-      ]
-    },
     {
       "source": "/sitemap.xml",
       "headers": [
