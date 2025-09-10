@@ -8,30 +8,36 @@
   <meta name="description" content="Estomaterapia em Diadema: tratamento de feridas e curativos especiais com atendimento domiciliar." />
   <link rel="canonical" href="https://dermvance.vercel.app/diadema/" />
 
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://dermvance.vercel.app/diadema/">
-  <meta property="og:title"       content="DermVance – Estomaterapia em Diadema">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dermvance.vercel.app/diadema/">
+  <meta property="og:title" content="DermVance – Estomaterapia em Diadema">
   <meta property="og:description" content="Estomaterapia em Diadema: tratamento de feridas e curativos especiais com atendimento domiciliar.">
-  <meta property="og:image"       content="https://dermvance.vercel.app/img/og-cover.webp">
-  <meta property="og:image:type"  content="image/webp">
-  <meta property="og:image:alt"   content="DermVance estomaterapia em Diadema" />
+  <meta property="og:image" content="https://dermvance.vercel.app/img/og-cover.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="DermVance estomaterapia em Diadema" />
 
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="DermVance – Estomaterapia em Diadema">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DermVance – Estomaterapia em Diadema">
   <meta name="twitter:description" content="Estomaterapia em Diadema: tratamento de feridas e curativos especiais com atendimento domiciliar.">
-  <meta name="twitter:image"       content="https://dermvance.vercel.app/img/og-cover.webp">
+  <meta name="twitter:image" content="https://dermvance.vercel.app/img/og-cover.webp">
 
+  <!-- Verificação Google -->
   <meta name="google-site-verification" content="lyD9zFntJb2AGStj6Ar5L3btYDYwF069Pp68naBRtsw">
 
-  <link rel="icon"           href="/favicon/favicon.ico"       type="image/x-icon" sizes="any">
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="any">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon.ico">
 
+  <!-- Preloads -->
   <link rel="preload" as="image" href="/img/hero-960.webp" media="(max-width: 768px)">
   <link rel="preload" as="image" href="/img/hero-1440.webp" media="(min-width: 769px)">
   <link rel="preload" as="image" href="/img/logo-45.webp">
   <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin onload="this.rel='stylesheet'">
 
+  <!-- Webfonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -94,6 +100,7 @@
     .floating-btn i { font-size: 1.4rem; }
   </style>
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -102,17 +109,36 @@
     gtag('config', 'G-Z8CW61NJZH');
   </script>
 
+  <!-- JSON-LD único (Diadema) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"MedicalBusiness",
-    "name":"DermVance",
+    "@id":"https://dermvance.vercel.app/diadema/#clinic",
+    "name":"DermVance – Estomaterapia em Diadema",
     "url":"https://dermvance.vercel.app/diadema/",
-    "telephone":"+5511993806245",
+    "image":"https://dermvance.vercel.app/img/og-cover.webp",
+    "logo":"https://dermvance.vercel.app/img/logo-45.webp",
+
+    "telephone":"+55 11 99380-6245",
+    "contactPoint":[
+      { "@type":"ContactPoint", "telephone":"+55 11 99380-6245", "contactType":"customer service", "areaServed":"BR" },
+      { "@type":"ContactPoint", "telephone":"+55 11 96815-5609", "contactType":"customer service", "areaServed":"BR" }
+    ],
     "email":"mailto:dermvance@gmail.com",
-    "address":{"@type":"PostalAddress","addressLocality":"Diadema","addressRegion":"SP","addressCountry":"BR"},
-    "areaServed":["Diadema"],
     "description":"Estomaterapia em Diadema: tratamento de feridas e curativos especiais com atendimento domiciliar.",
+    "priceRange":"$$",
+
+    "address":{"@type":"PostalAddress","addressLocality":"Diadema","addressRegion":"SP","addressCountry":"BR","postalCode":"09900-000"},
+    "geo":{"@type":"GeoCoordinates","latitude":-23.6736,"longitude":-46.6190},
+    "areaServed":["Diadema"],
+    "hasMap":"https://share.google/1iNa4SMeO8ftPR5io",
+
+    "branchOf":{"@id":"https://dermvance.vercel.app/#dermvance"},
+
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}
+    ],
     "sameAs":[ "https://www.instagram.com/dermvance/" ]
   }
   </script>
@@ -169,6 +195,7 @@
       <div class="container" data-aos="fade-up">
         <h2 class="section-title">A Ciência da Luz a Serviço da Sua Pele</h2>
         <p class="section-subtitle">Utilizamos a fotobioestimulação para acelerar a cicatrização de feridas, estomias e fístulas.</p>
+
         <div class="laser-grid">
           <div class="laser-text-content" data-aos="fade-right">
             <h3>Como a Luz Atua na Pele?</h3>
@@ -186,6 +213,7 @@
               </div>
             </div>
           </div>
+
           <div class="laser-benefits-list" data-aos="fade-left" data-aos-delay="200">
             <h3>Benefícios Clínicos Comprovados</h3>
             <div class="benefit-item">
@@ -206,18 +234,18 @@
               <i class="fa-solid fa-face-smile" aria-hidden="true"></i>
               <div>
                 <h4>Alívio da Dor</h4>
-              <p>A terapia a laser reduz significativamente a dor, tornando o tratamento mais confortável.</p>
+                <p>A terapia a laser reduz significativamente a dor, tornando o tratamento mais confortável.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="/terapia-cicatrizacao.html" class="btn btn-primary">Conheça todas as Terapias</a>
+        <div style="text-align: center; margin-top: 40px;">
+          <!-- padronizado com o sitemap -->
+          <a href="/terapia-cicatrizacao/" class="btn btn-primary">Conheça todas as Terapias</a>
+        </div>
       </div>
-
-    </div>
-</section>
+    </section>
 
     <section class="team-section">
       <div class="container" data-aos="fade-up">
@@ -270,7 +298,7 @@
         <div class="contact-content">
           <div class="contact-info">
             <h3>Canais de Atendimento</h3>
-            <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/5511993806245?text=Olá" target="_blank" rel="noopener">Fagner: +55 11 993806245</a></p>
+            <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/5511993806245?text=Olá" target="_blank" rel="noopener">Fagner: (11) 99380-6245</a></p>
             <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/5511968155609?text=Olá" target="_blank" rel="noopener">Selma: +55 11 96815-5609</a></p>
             <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:dermvance@gmail.com">dermvance@gmail.com</a></p>
             <p><i class="fab fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/dermvance/" target="_blank" rel="noopener">@dermvance</a></p>
@@ -321,7 +349,7 @@
   <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
- <script>
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (typeof AOS !== 'undefined') AOS.init({ duration: 800, once: true, disable: 'mobile' });
 
@@ -334,8 +362,6 @@
 
         form.addEventListener('submit', e => {
           e.preventDefault();
-          
-          // LÓGICA NO LUGAR CERTO (EXECUTADA A CADA CLIQUE)
           let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
           const pro = profissionais[idx];
           localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
@@ -350,34 +376,12 @@
     });
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"MedicalClinic",
-    "name":"DermVance – Estomaterapia em Diadema",
-    "url":"https://dermvance.vercel.app/diadema/",
-    "image":"https://dermvance.vercel.app/img/og-cover.webp",
-    "address":{"@type":"PostalAddress","addressLocality":"Diadema","addressRegion":"SP","addressCountry":"BR","postalCode":"09900-000"},
-    "geo":{"@type":"GeoCoordinates","latitude":"-23.6736","longitude":"-46.6190"},
-    "telephone":"+5511993806245",
-    "email":"mailto:dermvance@gmail.com",
-    "description":"Clínica especializada em estomaterapia e cuidados com feridas em Diadema.",
-    "areaServed":["Diadema"],
-    "founder":[
-      {"@type":"Person","name":"Fagner","identifier":"COREN-SP 537.607","jobTitle":"Enfermeiro Estomaterapeuta"},
-      {"@type":"Person","name":"Selma Reis","identifier":"COREN-SP 628.246","jobTitle":"Enfermeira Estomaterapeuta"}
-    ],
-    "openingHoursSpecification":[
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}
-    ],
-    "sameAs":[ "https://www.instagram.com/dermvance/" ]
-  }
-  </script>
-
+  <!-- Botão flutuante WhatsApp -->
   <a href="https://wa.me/5511993806245?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" class="floating-btn">
     <i class="fab fa-whatsapp"></i> Fale no WhatsApp
   </a>
 
+  <!-- Banner de Cookies LGPD -->
   <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; width:100%; background:rgba(29, 43, 74, 0.95); color:white; padding:15px 20px; text-align:center; z-index:1001; font-size: 14px;">
     <p style="margin:0; display:inline;">Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa
     <a href="/politica-privacidade.html" style="color:#F28D1F; text-decoration:underline;">Política de Privacidade</a>.</p>
