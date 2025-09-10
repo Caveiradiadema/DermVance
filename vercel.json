@@ -1,19 +1,5 @@
 {
-  "version": 2,
-  "redirects": [
-    { "source": "/diadema",               "destination": "/diadema/",               "permanent": true },
-    { "source": "/santo-andre",           "destination": "/santo-andre/",           "permanent": true },
-    { "source": "/sao-bernardo-do-campo", "destination": "/sao-bernardo-do-campo/", "permanent": true },
-    { "source": "/sao-caetano-do-sul",    "destination": "/sao-caetano-do-sul/",    "permanent": true },
-    { "source": "/terapia-cicatrizacao",  "destination": "/terapia-cicatrizacao/",  "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/diadema/",               "destination": "/diadema.html" },
-    { "source": "/santo-andre/",           "destination": "/santo-andre.html" },
-    { "source": "/sao-bernardo-do-campo/", "destination": "/sao-bernardo-do-campo.html" },
-    { "source": "/sao-caetano-do-sul/",    "destination": "/sao-caetano-do-sul.html" },
-    { "source": "/terapia-cicatrizacao/",  "destination": "/terapia-cicatrizacao.html" }
-  ],
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/sitemap.xml",
