@@ -137,3 +137,73 @@ section{padding:100px 0}
 .contact-info a:visited{
   color: var(--cor-primaria);
 }
+
+/* ===================
+   Seção de Depoimentos
+   =================== */
+.testimonials-section {
+  background-color: var(--cor-fundo);
+}
+
+.testimonials-slider {
+  position: relative;
+  padding: 20px 0 50px; /* Espaço para a paginação e setas */
+}
+
+.depoimento-card {
+  background: var(--cor-branco);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px var(--cor-sombra);
+  height: 100%; /* Garante que os cards tenham a mesma altura */
+  display: flex;
+  flex-direction: column;
+}
+
+.depoimento-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.depoimento-foto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.depoimento-info .nome {
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  display: block;
+}
+
+.depoimento-info .data {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.depoimento-card .stars {
+  color: #ffc107; /* Amarelo padrão para estrelas */
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.depoimento-texto {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1; 
+}
+
+/* Estilos para as setas e paginação do Swiper */
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1.5rem !important;
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--cor-primaria);
+}
