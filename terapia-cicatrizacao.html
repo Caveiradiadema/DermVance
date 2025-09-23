@@ -64,28 +64,31 @@
     @media (min-width:768px) { .hero-title { font-size:3.5rem } }
     .hero-subtitle { font-size:1.2rem; margin-bottom:40px; font-weight:400; opacity:.9 }
     .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 }
-     /* Botão flutuante WhatsApp */
+
+    /* MAPA */
+    .mapa-abcd{margin:clamp(28px,6vw,56px) auto}
+    .mapa-wrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;background:#fff}
+    .mapa-wrap iframe{width:100%;height:clamp(260px,42vw,420px);border:0;display:block}
+    @media(max-width:480px){.mapa-abcd .btn{width:100%;text-align:center}}
+
+    /* BLOG */
+    .blog-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+    @media(max-width:992px){.blog-list{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.blog-list{grid-template-columns:1fr}}
+    .blog-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;box-shadow:0 5px 25px rgba(42,63,109,.1);overflow:hidden;transition:transform .25s ease, box-shadow .25s ease}
+    .blog-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(42,63,109,.12)}
+    .blog-card a{display:block;color:inherit;text-decoration:none;padding:16px}
+    .blog-card h3{font-family:var(--fonte-titulo);font-size:clamp(1.05rem,1.3vw,1.2rem);color:var(--cor-secundaria);margin-bottom:6px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .blog-card p{font-size:clamp(.95rem,1.2vw,1rem);color:#555;margin:8px 0 10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+    /* Botão flutuante WhatsApp */
     .floating-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25D366;
-      color: #fff;
-      padding: 14px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-      z-index: 1000;
-      transition: transform .3s, box-shadow .3s;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      position: fixed; bottom: 30px; right: 30px; background: #25D366; color: #fff;
+      padding: 14px 20px; border-radius: 50px; text-decoration: none; font-weight: 700;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000;
+      transition: transform .3s, box-shadow .3s; display: flex; align-items: center; gap: 8px;
     }
-    .floating-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-    }
+    .floating-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6); }
     .floating-btn i { font-size: 1.4rem; }
   </style>
 
@@ -156,7 +159,7 @@
 
           <h3>ILIB – Irradiação Intravascular do Sangue com Laser</h3>
           <p>
-            A técnica <strong>ILIB</strong> (conhecida como laserterapia sistêmica) eleva o tratamento a outro nível. Um laser de baixa intensidade é aplicado de forma transcutânea sobre a artéria radial (no pulso), atuando diretamente na corrente sanguínea. Isso promove um efeito anti-inflamatório sistêmico, melhora a oxigenação dos tecidos, combate os radicais livres e otimiza a microcirculação em todo o corpo. O ILIB não trata apenas a ferida local, mas melhora a saúde geral do paciente, potencializando a cicatrização de dentro para fora.
+            A técnica <strong>ILIB</strong> (conhecida como laserterapia sistêmica) eleva o tratamento a outro nível. Um laser de baixa intensidade é aplicado de forma transcutânea sobre a ar­teria radial (no pulso), atuando diretamente na corrente sanguínea. Isso promove um efeito anti-inflamatório sistêmico, melhora a oxigenação dos tecidos, combate os radicais livres e otimiza a microcirculação em todo o corpo. O ILIB não trata apenas a ferida local, mas melhora a saúde geral do paciente, potencializando a cicatrização de dentro para fora.
           </p>
           
           <h3>Prescrição de Manipulados para Cicatrização</h3>
@@ -166,6 +169,25 @@
         </div>
 
       </div>
+    </section>
+
+    <!-- MAPA (Place com card da empresa) -->
+    <section class="mapa-abcd container" aria-labelledby="mapa-terapia-titulo" data-aos="fade-up">
+      <h2 id="mapa-terapia-titulo" class="section-title">Atendimento na Grande ABC</h2>
+      <div class="mapa-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233896.48138628935!2d-46.7529414!3d-23.6533279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x822094fb0f361163%3A0x8f9c6e3b9213d27a!2sDermvance!5e0!3m2!1spt-BR!2sbr!4v1758662591758!5m2!1spt-BR!2sbr"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="DermVance no Google Maps">
+        </iframe>
+      </div>
+      <p style="margin-top:10px">
+        <a class="btn btn-primary"
+           href="https://www.google.com/maps/place/Dermvance/@-23.6533279,-46.7529414,11z/data=!4m6!3m5!1s0x822094fb0f361163:0x8f9c6e3b9213d27a!8m2!3d-23.7837918!4d-46.4648744!16s%2Fg%2F11xygqwqby?entry=ttu"
+           target="_blank" rel="noopener">
+          Ver no Google Maps
+        </a>
+      </p>
     </section>
 
     <section id="contato" class="contact-section">
@@ -199,6 +221,21 @@
         </div>
       </div>
     </section>
+
+    <section class="blog-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title">Últimos do Blog</h2>
+        <div class="blog-list">
+          <article class="blog-card">
+            <a href="https://dev.to/dermvance-blog/laserterapia-em-abcd-doi-quais-tipos-de-feridas-podemos-tratar-i7o" target="_blank" rel="noopener">
+              <h3>Laserterapia em ABCD: dói? Quais feridas podemos tratar?</h3>
+              <p>Entenda o conforto durante as sessões e os diferentes tipos de lesões tratáveis com laser.</p>
+              <span class="btn btn-primary">Leia mais</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -224,8 +261,6 @@
 
         form.addEventListener('submit', e => {
           e.preventDefault();
-          
-          // LÓGICA NO LUGAR CERTO (EXECUTADA A CADA CLIQUE)
           let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
           const pro = profissionais[idx];
           localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
@@ -275,26 +310,10 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Laser de baixa intensidade dói?",
-        "acceptedAnswer":{"@type":"Answer","text":"Não. O LLLT é indolor e não aquece o tecido. A luz estimula processos celulares que aceleram a cicatrização e reduzem a inflamação."}
-      },
-      {
-        "@type":"Question",
-        "name":"A Terapia Fotodinâmica (PDT) substitui antibiótico?",
-        "acceptedAnswer":{"@type":"Answer","text":"A PDT atua contra microrganismos e biofilmes locais. Em alguns casos, pode reduzir a necessidade de antibióticos, mas a conduta é sempre individual e pode ser combinada ao tratamento médico."}
-      },
-      {
-        "@type":"Question",
-        "name":"O ILIB é invasivo?",
-        "acceptedAnswer":{"@type":"Answer","text":"Não. Utilizamos aplicação transcutânea sobre a artéria radial. O objetivo é promover efeitos sistêmicos como melhora da microcirculação e ação anti-inflamatória."}
-      },
-      {
-        "@type":"Question",
-        "name":"Quantas sessões são necessárias?",
-        "acceptedAnswer":{"@type":"Answer","text":"Varia conforme o tipo e a gravidade da lesão. Após a avaliação, definimos um plano personalizado com a frequência ideal de sessões e reavaliações periódicas."}
-      }
+      {"@type":"Question","name":"Laser de baixa intensidade dói?","acceptedAnswer":{"@type":"Answer","text":"Não. O LLLT é indolor e não aquece o tecido. A luz estimula processos celulares que aceleram a cicatrização e reduzem a inflamação."}},
+      {"@type":"Question","name":"A Terapia Fotodinâmica (PDT) substitui antibiótico?","acceptedAnswer":{"@type":"Answer","text":"A PDT atua contra microrganismos e biofilmes locais. Em alguns casos, pode reduzir a necessidade de antibióticos, mas a conduta é sempre individual e pode ser combinada ao tratamento médico."}},
+      {"@type":"Question","name":"O ILIB é invasivo?","acceptedAnswer":{"@type":"Answer","text":"Não. Utilizamos aplicação transcutânea sobre a artéria radial. O objetivo é promover efeitos sistêmicos como melhora da microcirculação e ação anti-inflamatória."}},
+      {"@type":"Question","name":"Quantas sessões são necessárias?","acceptedAnswer":{"@type":"Answer","text":"Varia conforme o tipo e a gravidade da lesão. Após a avaliação, definimos um plano personalizado com a frequência ideal de sessões e reavaliações periódicas."}}
     ]
   }
   </script>
