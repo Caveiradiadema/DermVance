@@ -361,13 +361,22 @@
       </div>
     </section>
 
-    <!-- BLOG (dinâmico via feed do Blogger) -->
+    <!-- BLOG (igual às páginas de cidade) -->
     <section class="blog-section" role="region" aria-labelledby="blog-title">
       <div class="container" data-aos="fade-up">
         <h2 class="section-title" id="blog-title">Últimos do Blog</h2>
-        <div id="blogger-feed" class="blog-list"></div>
+        <div class="blog-list">
+          <article class="blog-card">
+            <a href="https://dev.to/dermvance-blog/laserterapia-em-abcd-doi-quais-tipos-de-feridas-podemos-tratar-i7o" target="_blank" rel="noopener">
+              <h3>Laserterapia em ABCD: dói? Quais feridas podemos tratar?</h3>
+              <p>Entenda o conforto durante as sessões e os diferentes tipos de lesões tratáveis com laser.</p>
+              <span class="btn btn-primary">Leia mais</span>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="main-footer">
@@ -410,89 +419,6 @@
       const cookieBanner = document.getElementById('cookie-banner');
       if (cookieBanner && !localStorage.getItem('cookiesAccepted')) {
         cookieBanner.style.display = 'block';
-      }
-
-      // Feed do Blogger — fetch com fallback JSONP, limpeza de <style>/<script> e imagem HD
-      const feedContainer = document.getElementById('blogger-feed');
-      if (feedContainer) {
-        const FEED_BASE = 'https://dermvance.blogspot.com/feeds/posts/default';
-        const FEED_URL  = FEED_BASE + '?alt=json&max-results=3&orderby=published';
-
-        function sanitizeRaw(html){
-          return (html || '')
-            .replace(/<style[\s\S]*?<\/style>/gi,'')
-            .replace(/<script[\s\S]*?<\/script>/gi,'');
-        }
-
-        function improveThumb(url){
-          if (!url) return '';
-          if (/bp\.blogspot\.com|blogger\.googleusercontent\.com/.test(url)) {
-            return url.replace(/\/s\d+(-c)?\//, '/s800/');
-          }
-          return url;
-        }
-
-        function renderEntries(entries){
-          if (!entries || !entries.length) {
-            feedContainer.innerHTML = '<p>Nenhum post encontrado no momento.</p>';
-            return;
-          }
-          const cards = entries.map(e => {
-            const title = e.title?.$t || 'Sem título';
-            const link  = (e.link||[]).find(l => l.rel === 'alternate')?.href || '#';
-
-            const raw0  = e.content?.$t || e.summary?.$t || '';
-            const raw   = sanitizeRaw(raw0);
-
-            const pMatch = raw.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-            const firstPara = pMatch ? pMatch[1] : raw;
-
-            const plain = firstPara.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
-            const summary = plain.length > 160 ? plain.slice(0,160) + '…' : plain;
-
-            let img = e['media$thumbnail']?.url || '';
-            if (!img) {
-              const m = raw.match(/<img[^>]+src="([^"]+)"/i);
-              if (m && m[1]) img = m[1];
-            }
-            img = improveThumb(img);
-
-            const dateStr = (e.published?.$t || '').slice(0,10);
-            const date = dateStr ? new Date(dateStr + 'T00:00:00') : null;
-            const fmt = date ? date.toLocaleDateString('pt-BR', { day:'2-digit', month:'short', year:'numeric'}) : '';
-
-            return `
-              <article class="blog-card">
-                <a href="${link}" target="_blank" rel="noopener">
-                  ${img ? `<img src="${img}" alt="${title}" loading="lazy" decoding="async" />` : ''}
-                  <h3>${title}</h3>
-                  ${fmt ? `<small style="color:#64748b;display:block;margin:.25rem 0 .5rem">${fmt}</small>` : ''}
-                  <p>${summary}</p>
-                  <span class="btn btn-primary" style="margin-top:8px;display:inline-block">Leia mais</span>
-                </a>
-              </article>
-            `;
-          }).join('');
-          feedContainer.innerHTML = cards;
-        }
-
-        fetch(FEED_URL)
-          .then(r => { if (!r.ok) throw new Error('Feed HTTP error'); return r.json(); })
-          .then(json => renderEntries((json.feed && json.feed.entry) ? json.feed.entry : []))
-          .catch(() => {
-            const cb = 'handleBloggerJSONP_' + Math.random().toString(36).slice(2);
-            window[cb] = function(json){
-              try { renderEntries((json.feed && json.feed.entry) ? json.feed.entry : []); }
-              finally { delete window[cb]; script.remove(); }
-            };
-            const script = document.createElement('script');
-            script.src = FEED_BASE + '?alt=json-in-script&max-results=3&orderby=published&callback=' + cb;
-            script.onerror = () => {
-              feedContainer.innerHTML = '<p>Não foi possível carregar os posts do Blogger agora.</p>';
-              delete window[cb]; script.remove();
-            };
-            document.body.appendChild(script);
-          });
       }
     });
 
