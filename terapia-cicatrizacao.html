@@ -39,7 +39,7 @@
       --cor-primaria:#F28D1F;
       --cor-secundaria:#2A3F6D;
       --cor-branco:#FFFFFF;
-      --cor-sombra:rgba(42,63,109,1);
+      --cor-sombra:rgba(42,63,109,0.15);
       --fonte-titulo:'Playfair Display', serif;
       --fonte-corpo:'Inter', sans-serif;
     }
@@ -50,7 +50,11 @@
     .btn-primary { background:linear-gradient(45deg, var(--cor-primaria), #ffae5a); color:var(--cor-branco); box-shadow:0 4px 15px rgba(242,141,31,0.3) }
     .btn-primary:hover { transform:translateY(-3px); box-shadow:0 6px 20px rgba(242,141,31,0.5) }
     .btn-large { padding:18px 40px; font-size:1.1rem }
-    .main-header { background-color:rgba(255,255,255,0.9); backdrop-filter:blur(10px); padding:15px 0; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px var(--cor-sombra) }
+    
+    /* Sticky Wrapper para Menu + Barra */
+    .sticky-wrapper { position: sticky; top: 0; z-index: 1000; width: 100%; box-shadow: 0 2px 10px var(--cor-sombra); }
+    .main-header { background-color:rgba(255,255,255,0.95); backdrop-filter:blur(10px); padding:15px 0; width: 100%; position: relative; }
+
     .header-container { display:flex; justify-content:space-between; align-items:center }
     .logo-area { display:flex; align-items:center; gap:12px; text-decoration: none; }
     .logo-img { height:45px; width:auto }
@@ -66,10 +70,9 @@
     .visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 }
 
     /* MAPA */
-    .mapa-abcd{margin:clamp(28px,6vw,56px) auto}
-    .mapa-wrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;background:#fff}
-    .mapa-wrap iframe{width:100%;height:clamp(260px,42vw,420px);border:0;display:block}
-    @media(max-width:480px){.mapa-abcd .btn{width:100%;text-align:center}}
+    .mapa-abcd{margin:clamp(28px,6vw,56px) auto; text-align: center;}
+    .mapa-wrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;background:#fff; height: 350px;}
+    .mapa-wrap iframe{width:100%;height:100%;border:0;display:block}
 
     /* BLOG */
     .blog-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
@@ -102,14 +105,23 @@
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="container header-container">
-      <a href="/" class="logo-area">
-        <img src="/img/logo-45.webp" alt="Logo DermVance" class="logo-img">
-        <span class="logo-text">DermVance</span>
-      </a>
+  <div class="sticky-wrapper">
+    
+    <div style="background-color: #F28D1F; color: white; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 500;">
+      <i class="fa-solid fa-star"></i> Especialidade: Laserterapia no Pós-Cirúrgico (Cesárea, Plástica e Ortopedia). 
+      <a href="/laser-cirurgico.html" style="color: white; text-decoration: underline; font-weight: 700; margin-left: 5px;">Ver Protocolo</a>
     </div>
-  </header>
+
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="/" class="logo-area">
+          <img src="/img/logo-45.webp" alt="Logo DermVance" class="logo-img">
+          <span class="logo-text">DermVance</span>
+        </a>
+      </div>
+    </header>
+
+  </div>
 
   <section class="hero">
     <div class="hero-overlay"></div>
@@ -171,14 +183,12 @@
       </div>
     </section>
 
-    <!-- MAPA (Place com card da empresa) -->
     <section class="mapa-abcd container" aria-labelledby="mapa-terapia-titulo" data-aos="fade-up">
       <h2 id="mapa-terapia-titulo" class="section-title">Atendimento na Grande ABC</h2>
       <div class="mapa-wrap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233896.48138628935!2d-46.7529414!3d-23.6533279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x822094fb0f361163%3A0x8f9c6e3b9213d27a!2sDermvance!5e0!3m2!1spt-BR!2sbr!4v1758662591758!5m2!1spt-BR!2sbr"
-          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="DermVance no Google Maps">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116934.87271813735!2d-46.60269382226563!3d-23.664468200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4371421c60d9%3A0x6b772c3b28b49528!2sGrande%20ABC%2C%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa do Grande ABC">
         </iframe>
       </div>
       <p style="margin-top:10px">
@@ -240,7 +250,7 @@
 
   <footer class="main-footer">
     <div class="container">
-      <p>&copy; 2025 DermVance – Todos os direitos reservados.</p>
+      <p>© 2025 DermVance – Todos os direitos reservados.</p>
     </div>
   </footer>
 
