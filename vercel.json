@@ -3,16 +3,17 @@
   "trailingSlash": true,
 
   "rewrites": [
-    { "source": "/diadema/",               "destination": "/diadema.html" },
-    { "source": "/santo-andre/",           "destination": "/santo-andre.html" },
+    { "source": "/diadema/",               "destination": "/diadema.html" },
+    { "source": "/santo-andre/",           "destination": "/santo-andre.html" },
     { "source": "/sao-bernardo-do-campo/", "destination": "/sao-bernardo-do-campo.html" },
-    { "source": "/sao-caetano-do-sul/",    "destination": "/sao-caetano-do-sul.html" },
-    { "source": "/terapia-cicatrizacao/",  "destination": "/terapia-cicatrizacao.html" }
+    { "source": "/sao-caetano-do-sul/",    "destination": "/sao-caetano-do-sul.html" },
+    { "source": "/terapia-cicatrizacao/",  "destination": "/terapia-cicatrizacao.html" }
   ],
 
   "headers": [
     {
-      "source": "/sitemap.xml",
+      // 🛑 CORREÇÃO AQUI: Use o nome novo do sitemap!
+      "source": "/mapa-site-2025.xml", 
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
         { "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" },
