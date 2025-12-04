@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Política de Privacidade | DermVance Estomaterapia</title>
+  <meta name="description" content="Política de privacidade e proteção de dados da DermVance. Saiba como tratamos suas informações conforme a LGPD e ética de enfermagem." />
+  <link rel="canonical" href="https://dermvance.vercel.app/politica-privacidade.html" />
+
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon.ico" />
+
+  <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin onload="this.rel='stylesheet'" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  
+  <noscript><link rel="stylesheet" href="/css/styles.min.css" /></noscript>
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /></noscript>
+
+  <style>
+    :root{--cor-primaria:#F28D1F;--cor-secundaria:#2A3F6D;--cor-branco:#FFFFFF;--cor-sombra:rgba(42,63,109,0.15);--fonte-titulo:'Playfair Display',serif;--fonte-corpo:'Inter',sans-serif}
+    body{font-family:var(--fonte-corpo);color:#333;background-color:var(--cor-branco);overflow-x:hidden}
+    
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .3s,box-shadow .3s;border:none;cursor:pointer}
+    .btn-primary{background:linear-gradient(45deg,var(--cor-primaria),#ffae5a);color:var(--cor-branco);box-shadow:0 4px 15px rgba(242,141,31,0.3)}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(242,141,31,0.5)}
+
+    .main-header{background-color:rgba(255,255,255,0.95);backdrop-filter:blur(10px);padding:15px 0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px var(--cor-sombra)}
+    .header-container{display:flex;justify-content:space-between;align-items:center}
+    .logo-area{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo-img{height:45px;width:auto}
+    .logo-text{font-family:var(--fonte-titulo);font-size:1.8rem;font-weight:700;color:var(--cor-secundaria)}
+
+    /* Estilos Específicos da Página de Política (Baseado no laser-cirurgico.html) */
+    .page-hero { background-color: var(--cor-secundaria); color: var(--cor-branco); padding: 80px 0; text-align: center; }
+    .page-hero h1 { font-family: var(--fonte-titulo); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 10px; }
+    
+    .section-padding { padding: 60px 0; }
+    .bg-light { background-color: #f8f9fa; }
+    .section-title { color: var(--cor-secundaria); font-family: var(--fonte-titulo); font-size: 1.8rem; margin-bottom: 20px; border-left: 4px solid var(--cor-primaria); padding-left: 15px; }
+    
+    ul.policy-list { list-style: none; padding-left: 10px; }
+    ul.policy-list li { margin-bottom: 12px; position: relative; padding-left: 25px; }
+    ul.policy-list li::before { content: '\f058'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--cor-primaria); position: absolute; left: 0; top: 3px; font-size: 0.9rem; }
+
+    /* Footer e Botões */
+    .main-footer{background-color:#f1f1f1;padding:40px 0;text-align:center;margin-top:auto}
+    .floating-btn{position:fixed;bottom:30px;right:30px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 4px 15px rgba(37,211,102,0.4);z-index:1000;transition:transform .3s,box-shadow .3s;display:flex;align-items:center;gap:8px}
+    .floating-btn:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(37,211,102,0.6)}
+    
+    /* Formulário (igual aos outros arquivos) */
+    .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--fonte-corpo); }
+    .btn-full { width: 100%; text-align: center; }
+    .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8CW61NJZH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Z8CW61NJZH');
+  </script>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="/" class="logo-area">
+        <img src="/img/logo-45.webp" alt="Logo DermVance" class="logo-img" width="45" height="45" />
+        <span class="logo-text">DermVance</span>
+      </a>
+      <a href="/" style="text-decoration:none; color:var(--cor-secundaria); font-weight:600; font-size:0.9rem;">
+        <i class="fa-solid fa-arrow-left"></i> Voltar ao Início
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container" data-aos="fade-up">
+        <h1>Política de Privacidade</h1>
+        <p>Transparência e segurança conforme a LGPD.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">1. Compromisso com seus Dados</h2>
+        <p data-aos="fade-up">A DermVance preza pelo sigilo médico e pela segurança das informações de seus pacientes. Esta política detalha como coletamos e protegemos seus dados ao utilizar nosso site e serviços de agendamento, em total conformidade com a Lei Geral de Proteção de Dados (LGPD) e o Código de Ética de Enfermagem.</p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">2. Dados Coletados</h2>
+        <ul class="policy-list" data-aos="fade-up" data-aos-delay="100">
+          <li><strong>Identificação:</strong> Nome e WhatsApp (fornecidos voluntariamente para contato).</li>
+          <li><strong>Navegação:</strong> Cookies essenciais para funcionamento do site e preferências do usuário.</li>
+          <li><strong>Analytics:</strong> Dados anônimos de acesso via Google Analytics para melhoria do site.</li>
+          <li><strong>Saúde:</strong> Detalhes sobre feridas ou condições clínicas enviados via WhatsApp são protegidos pelo sigilo profissional (Enfermeiro-Paciente).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">3. Finalidade do Uso</h2>
+        <p data-aos="fade-up">Seus dados são utilizados exclusivamente para:</p>
+        <ul class="policy-list" data-aos="fade-up">
+            <li>Agendamento de avaliações e triagem clínica.</li>
+            <li>Resposta a dúvidas sobre tratamentos.</li>
+            <li>Melhoria da experiência de navegação.</li>
+        </ul>
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #555;"><strong>Nota:</strong> Jamais vendemos seus dados para terceiros.</p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">4. Seus Direitos</h2>
+        <p data-aos="fade-up">Você pode solicitar a qualquer momento a correção ou exclusão dos seus dados de contato da nossa base, bastando entrar em contato via WhatsApp ou através do formulário abaixo.</p>
+      </div>
+    </section>
+
+    <section id="contato" style="padding: 60px 0;">
+      <div class="container" style="max-width: 600px;" data-aos="fade-up">
+        <h2 class="section-title" style="text-align: center; border: none;">Dúvidas sobre Privacidade?</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Fale com nosso Encarregado de Dados.</p>
+        
+        <form class="contact-form" id="whatsapp-form">
+          <div>
+            <label for="nome" class="visually-hidden">Seu nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+          </div>
+          <div>
+            <label for="whatsapp" class="visually-hidden">Seu WhatsApp com DDD</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp com DDD" required />
+          </div>
+          <div>
+            <label for="mensagem" class="visually-hidden">Sua dúvida</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua dúvida sobre dados..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Falar no WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 DermVance – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511993806245?text=Ol%C3%A1!%20Vim%20pela%20pol%C3%ADtica%20de%20privacidade." target="_blank" rel="noopener" class="floating-btn">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+  </a>
+
+  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; width:100%; background:rgba(29, 43, 74, 0.95); color:white; padding:15px 20px; text-align:center; z-index:1001; font-size:14px;">
+    <p style="margin:0; display:inline;">Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa Política de Privacidade.</p>
+    <button onclick="acceptCookies()" style="background:#F28D1F; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer; margin-left:15px; font-weight:bold;">Aceitar</button>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Inicia animações
+      if (typeof AOS !== 'undefined') AOS.init({ duration: 800, once: true });
+
+      // Lógica de WhatsApp (Rodízio Fagner/Selma) - IDÊNTICA aos outros arquivos
+      const form = document.getElementById('whatsapp-form');
+      if (form) {
+        const profissionais = [
+          { nome: 'Fagner', fone: '5511993806245' },
+          { nome: 'Selma',  fone: '5511968155609' }
+        ];
+
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          // Recupera o índice salvo ou começa do 0
+          let idx = parseInt(localStorage.getItem('proximoProfissionalIndex')) || 0;
+          const pro = profissionais[idx];
+          // Atualiza o índice para o próximo (0 vira 1, 1 vira 0)
+          localStorage.setItem('proximoProfissionalIndex', (idx + 1) % profissionais.length);
+
+          const nome     = document.getElementById('nome').value.trim();
+          const whatsapp = document.getElementById('whatsapp').value.trim();
+          const msg      = document.getElementById('mensagem').value.trim();
+          
+          // Formatação da mensagem
+          const texto = `Olá, meu nome é ${nome} (WhatsApp: ${whatsapp}).%0AVim pela Política de Privacidade.%0A%0A${msg}`;
+          
+          window.open(`https://wa.me/${pro.fone}?text=${texto}`, '_blank', 'noopener');
+        });
+      }
+
+      // Lógica do Banner de Cookies - IDÊNTICA aos outros arquivos
+      const cookieBanner = document.getElementById('cookie-banner');
+      if (cookieBanner && !localStorage.getItem('cookiesAccepted')) {
+        cookieBanner.style.display = 'block';
+      }
+    });
+
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      const el = document.getElementById('cookie-banner');
+      if (el) el.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
